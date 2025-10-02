@@ -11,10 +11,12 @@ import { Product } from '@/context/CartContext';
 export const products: Product[] = [
   {
     id: '1',
-    name: 'Normal Chocolate',
+    name: 'Classic Chocolate',
     description: 'Classic dark chocolate with rich, smooth flavor',
     price: 50,
     image: normalChocolate,
+    size: '50gm',
+    rating: 4.5,
   },
   {
     id: '2',
@@ -22,6 +24,8 @@ export const products: Product[] = [
     description: 'Delightful chocolate with crispy rice crispies inside',
     price: 55,
     image: crackleChocolate,
+    size: '50gm',
+    rating: 4.7,
   },
   {
     id: '3',
@@ -29,6 +33,8 @@ export const products: Product[] = [
     description: 'Medjool premium dates filled with hazelnut covered in chocolate. The medjool is described as producing "large soft fruit, with orange-yellowish flesh, and a mildly rich and pleasing flavor". Being large, soft, and with a "caramel, honey" flavor, the variety has been called "the king of dates".',
     price: 150,
     image: datesChocolate,
+    size: '50gm',
+    rating: 4.9,
   },
   {
     id: '4',
@@ -36,6 +42,8 @@ export const products: Product[] = [
     description: 'Premium chocolate infused with dried fruits and nuts',
     price: 85,
     image: fruitNutChocolate,
+    size: '50gm',
+    rating: 4.6,
   },
   {
     id: '5',
@@ -43,6 +51,8 @@ export const products: Product[] = [
     description: 'Smooth chocolate infused with rich caramel',
     price: 65,
     image: caramelChocolate,
+    size: '50gm',
+    rating: 4.8,
   },
   {
     id: '6',
@@ -50,6 +60,8 @@ export const products: Product[] = [
     description: 'Creamy chocolate infused with butterscotch flavors',
     price: 85,
     image: butterscotchChocolate,
+    size: '50gm',
+    rating: 4.5,
   },
   {
     id: '7',
@@ -57,5 +69,7 @@ export const products: Product[] = [
     description: 'Chocolate with cookie pieces and cream flavoring',
     price: 100,
     image: cookiesCreamChocolate,
+    size: '50gm',
+    rating: 4.7,
   },
 ];
