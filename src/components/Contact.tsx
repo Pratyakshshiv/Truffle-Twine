@@ -19,8 +19,16 @@ export const Contact: React.FC = () => {
             <div className="w-16 h-16 bg-chocolate-medium rounded-full flex items-center justify-center mx-auto">
               <Phone className="h-8 w-8 text-primary-foreground" />
             </div>
-            <h3 className="text-xl font-semibold">Call Us</h3>
-            <p className="text-muted-foreground">+91 62013 26718</p>
+             <h3 className="text-xl font-semibold">WhatsApp Us</h3>
+            <a 
+              href="https://wa.me/916201326718"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 bg-green-600 hover:bg-green-700 text-white px-6 py-3 rounded-lg transition-colors font-medium"
+            >
+              <Phone className="h-5 w-5" />
+              Chat on WhatsApp
+            </a>
           </div>
 
           <div className="text-center space-y-4">
