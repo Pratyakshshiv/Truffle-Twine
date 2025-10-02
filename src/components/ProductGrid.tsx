@@ -50,6 +50,25 @@ export const ProductGrid: React.FC = () => {
                   </div>
                   <span className="text-xl font-bold text-caramel">₹{product.price}</span>
                 </div>
+                {product.rating && (
+                  <div className="flex items-center gap-1">
+                    {[...Array(5)].map((_, i) => (
+                      <Star
+                        key={i}
+                        className={`h-4 w-4 ${
+                          i < Math.floor(product.rating!)
+                            ? 'fill-yellow-400 text-yellow-400'
+                            : i < product.rating!
+                            ? 'fill-yellow-400/50 text-yellow-400'
+                            : 'fill-muted text-muted'
+                        }`}
+                      />
+                    ))}
+                    <span className="text-sm text-muted-foreground ml-1">
+                      {product.rating.toFixed(1)}
+                    </span>
+                  </div>
+                )}
               </CardHeader>
               <CardContent>
                 <CardDescription className="text-sm text-muted-foreground mb-4 line-clamp-3">
