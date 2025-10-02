@@ -25,7 +25,7 @@ export const Footer: React.FC = () => {
           <div>
             <h4 className="font-semibold mb-4">Contact Info</h4>
             <ul className="space-y-2 text-primary-foreground/80">
-              <li>+91 62013 26718</li>
+              
               <li>truffleandtwine@gmail.com</li>
               <li>Bangalore, India</li>
             </ul>
