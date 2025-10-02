@@ -1,6 +1,7 @@
 import React from 'react';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
+import { Star } from 'lucide-react';
 import { products } from '@/data/products';
 import { useCart } from '@/context/CartContext';
 import { useToast } from '@/hooks/use-toast';
@@ -40,8 +41,13 @@ export const ProductGrid: React.FC = () => {
                 />
               </div>
               <CardHeader>
-                <div className="flex justify-between items-start">
-                  <CardTitle className="text-xl">{product.name}</CardTitle>
+                <div className="flex justify-between items-start mb-2">
+                  <div>
+                    <CardTitle className="text-xl">{product.name}</CardTitle>
+                    {product.size && (
+                      <p className="text-sm text-muted-foreground mt-1">{product.size}</p>
+                    )}
+                  </div>
                   <span className="text-xl font-bold text-caramel">₹{product.price}</span>
                 </div>
               </CardHeader>
