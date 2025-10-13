@@ -5,6 +5,7 @@ import fruitNutChocolate from '@/assets/fruit-nut-chocolate.jpg';
 import caramelChocolate from '@/assets/caramel-chocolate.jpg';
 import butterscotchChocolate from '@/assets/butterscotch-chocolate.jpg';
 import cookiesCreamChocolate from '@/assets/cookies-cream-chocolate.jpg';
+import diwaliChocolate from '@/assets/diwali-chocolate.jpg';
 
 import { Product } from '@/context/CartContext';
 
@@ -14,6 +15,7 @@ export const products: Product[] = [
     name: 'Classic Chocolate',
     description: 'Classic dark chocolate with rich, smooth flavor',
     price: 85,
+    mrp: 110,
     image: normalChocolate,
     size: '50gm',
     rating: 4.5,
@@ -23,6 +25,7 @@ export const products: Product[] = [
     name: 'Crackle Chocolate',
     description: 'Delightful chocolate with crispy rice crispies inside',
     price: 90,
+    mrp: 110,
     image: crackleChocolate,
     size: '50gm',
     rating: 4.7,
@@ -32,6 +35,7 @@ export const products: Product[] = [
     name: 'Hazelnut Dates Chocolate',
     description: 'Medjool premium dates filled with hazelnut covered in chocolate. The medjool is described as producing "large soft fruit, with orange-yellowish flesh, and a mildly rich and pleasing flavor". Being large, soft, and with a "caramel, honey" flavor, the variety has been called "the king of dates".',
     price: 120,
+    mrp: 150,
     image: datesChocolate,
     size: '50gm',
     rating: 4.9,
@@ -41,6 +45,7 @@ export const products: Product[] = [
     name: 'Fruit and Nut Chocolate',
     description: 'Premium chocolate infused with dried fruits and nuts',
     price: 95,
+    mrp: 120,
     image: fruitNutChocolate,
     size: '50gm',
     rating: 4.6,
@@ -50,6 +55,7 @@ export const products: Product[] = [
     name: 'Caramel Chocolate',
     description: 'Smooth chocolate infused with rich caramel',
     price: 90,
+    mrp: 110,
     image: caramelChocolate,
     size: '50gm',
     rating: 4.8,
@@ -59,6 +65,7 @@ export const products: Product[] = [
     name: 'Butterscotch Chocolate',
     description: 'Creamy chocolate infused with butterscotch flavors',
     price: 110,
+    mrp: 140,
     image: butterscotchChocolate,
     size: '50gm',
     rating: 4.5,
@@ -68,8 +75,19 @@ export const products: Product[] = [
     name: 'Cookie and Cream Chocolate',
     description: 'Chocolate with cookie pieces and cream flavoring',
     price: 100,
+    mrp: 120,
     image: cookiesCreamChocolate,
     size: '50gm',
     rating: 4.7,
+  },
+  {
+    id: '8',
+    name: 'Diwali Special Chocolate',
+    description: 'Festive gift set with hand-painted diyas and premium artisan chocolate bar',
+    price: 199,
+    mrp: 240,
+    image: diwaliChocolate,
+    size: '100gm',
+    rating: 5.0,
   },
 ];
