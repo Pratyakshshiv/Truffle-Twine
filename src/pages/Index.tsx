@@ -1,6 +1,7 @@
 import React from 'react';
 import { CartProvider } from '@/context/CartContext';
 import { Header } from '@/components/Header';
+import { OfferBanner } from '@/components/OfferBanner';
 import { Hero } from '@/components/Hero';
 import { FestiveCollection } from '@/components/FestiveCollection';
 import { ProductGrid } from '@/components/ProductGrid';
@@ -13,6 +14,7 @@ const Index = () => {
     <CartProvider>
       <div className="min-h-screen">
         <Header />
+        <OfferBanner />
         <Hero />
         <FestiveCollection />
         <ProductGrid />
