@@ -56,6 +56,7 @@ export const FestiveCollection: React.FC = () => {
       name: hamper.name,
       description: hamper.description,
       price: hamper.price,
+      mrp: hamper.price,
       image: hamper.image,
     });
     
