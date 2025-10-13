@@ -4,6 +4,7 @@ export interface Product {
   id: string;
   name: string;
   price: number;
+  mrp: number;
   image: string;
   description: string;
   size?: string;
