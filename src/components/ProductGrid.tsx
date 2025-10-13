@@ -48,7 +48,10 @@ export const ProductGrid: React.FC = () => {
                       <p className="text-sm text-muted-foreground mt-1">{product.size}</p>
                     )}
                   </div>
-                  <span className="text-xl font-bold text-caramel">₹{product.price}</span>
+                   <div className="text-right">
+                    <span className="text-sm text-muted-foreground line-through">₹{product.mrp}</span>
+                    <span className="text-xl font-bold text-caramel ml-2">₹{product.price}</span>
+                  </div>
                 </div>
                 {product.rating && (
                   <div className="flex items-center gap-1">
